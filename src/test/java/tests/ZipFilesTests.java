@@ -60,7 +60,7 @@ public class ZipFilesTests {
     void testXls() throws Exception {
         try (ZipFile zipFile = new ZipFile(new File("src/test/resources/zipFiles.zip"))) {
             ZipEntry xlsFile = zipFile.getEntry("budget.xlsx");
-            if(xlsFile != null) {
+            if (xlsFile != null) {
                 try (InputStream inputStreamXls = zipFile.getInputStream(xlsFile)) {
                     XLS xls = new XLS(inputStreamXls);
 
