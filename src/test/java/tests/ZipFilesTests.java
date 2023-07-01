@@ -90,7 +90,6 @@ public class ZipFilesTests {
         Assertions.assertEquals("Evgenii", glossaryModel.getCreator().getName());
         Assertions.assertEquals("Klimashin", glossaryModel.getCreator().getSurname());
         Assertions.assertTrue(glossaryModel.getCreator().getHuman());
-
     }
 
 }
